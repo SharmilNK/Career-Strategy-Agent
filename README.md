@@ -23,7 +23,7 @@ of missing skills.
 User (Streamlit UI)
        │
        ▼
-  agent.py  ←── hand-written plan → execute → observe loop
+  agent  ← plan → execute → observe loop
        │
        ├── Tool 1: parse_resume()          (PyMuPDF + LLM)
        ├── Tool 2: fetch_job_requirements() (BeautifulSoup + O*NET + LLM)
@@ -39,12 +39,13 @@ User (Streamlit UI)
 ## Project structure
 
 ```
-consensus/
-├── setup_colab.ipynb   # Colab notebook: installs Ollama, writes files, launches UI
-├── agent.py            # Agent loop (plan → execute → observe)
-├── tools.py            # All 5 tool functions
-├── app.py              # Streamlit UI
-├── eval.py             # Quantitative evaluation script
+
+├── main.ipynb      # Colab notebook: installs Ollama, writes files, launches UI
+writes below sourcefiles 
+agent.py            # Agent loop (plan → execute → observe)
+tools.py            # All 5 tool functions
+app.py              # Streamlit UI
+eval.py             # Quantitative evaluation script
 ├── eval_data/          # Place test PDFs here for evaluation
 │   ├── resume_01.pdf
 │   ├── resume_02.pdf
@@ -56,7 +57,7 @@ consensus/
 
 ## Running on Google Colab (recommended)
 
-1. Open `setup_colab.ipynb` in Google Colab
+1. Open `main.ipynb` in Google Colab
 2. Run all cells in order — this will:
    - Install Ollama and pull `tinyllama`
    - Install Python dependencies
