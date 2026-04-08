@@ -50,6 +50,7 @@ eval.py             # Quantitative evaluation script
 │   ├── resume_01.pdf
 │   ├── resume_02.pdf
 │   └── resume_03.pdf
+|   └── eval_results.json
 └── README.md
 ```
 
