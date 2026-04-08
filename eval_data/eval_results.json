@@ -1,0 +1,219 @@
+[
+  {
+    "id": "test_01",
+    "name": "Priya Nair \u2014 HR Manager",
+    "role": "HR Manager",
+    "tool1_parse": {
+      "precision": 0.333,
+      "recall": 0.333,
+      "f1": 0.333,
+      "tp": 2,
+      "fp": 4,
+      "fn": 4,
+      "latency_s": 2.19,
+      "n_predicted": 6,
+      "n_ground_truth": 17,
+      "name_extracted": "PRIYA NAIR",
+      "predicted_skills": [
+        "Go",
+        "R",
+        "Scala",
+        "Rag",
+        "Leadership",
+        "Stakeholder Management"
+      ]
+    },
+    "tool2_fetch": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 10,
+      "latency_s": 0.77,
+      "source": "llm_fallback",
+      "n_fetched": 0,
+      "fetched_skills": []
+    },
+    "tool3_gap": {
+      "missing_precision": 0.0,
+      "missing_recall": 0.0,
+      "missing_f1": 0.0,
+      "matched_precision": 0.0,
+      "matched_recall": 0.0,
+      "matched_f1": 0.0,
+      "overlap_score": 0.0,
+      "latency_s": 0.8,
+      "predicted_missing": [],
+      "predicted_matched": []
+    },
+    "tool4_rewrite": {
+      "keyword_match_rate": 0.8,
+      "word_count": 196,
+      "latency_s": 0.47,
+      "has_placeholder": false,
+      "rewritten_preview": "PRIYA NAIR ==========  TARGET ROLE: HR Manager  PROFESSIONAL SUMMARY -------------------- PRINCE2 NAIR - HR Manager - Professional Summary (3 sentences)  - A highly skilled and experienced HR Manager with a proven track record of delivering successful HR strategies, policies, and processes in a vari"
+    }
+  },
+  {
+    "id": "test_02",
+    "name": "Sharmil Kallichanda \u2014 ML Engineer",
+    "role": "ML Engineer",
+    "tool1_parse": {
+      "precision": 0.722,
+      "recall": 0.722,
+      "f1": 0.722,
+      "tp": 13,
+      "fp": 5,
+      "fn": 5,
+      "latency_s": 1.26,
+      "n_predicted": 18,
+      "n_ground_truth": 24,
+      "name_extracted": "SHARMIL KALLICHANDA",
+      "predicted_skills": [
+        "Python",
+        "Go",
+        "Rust",
+        "R",
+        "Sql",
+        "Deep Learning",
+        "Nlp",
+        "Computer Vision",
+        "Tensorflow",
+        "Pytorch",
+        "Scikit-Learn",
+        "Llm",
+        "Rag",
+        "Data Engineering",
+        "Ci/Cd",
+        "Git",
+        "Agile",
+        "Research"
+      ]
+    },
+    "tool2_fetch": {
+      "precision": 0.875,
+      "recall": 0.636,
+      "f1": 0.737,
+      "tp": 7,
+      "fp": 1,
+      "fn": 4,
+      "latency_s": 0.14,
+      "source": "static_map",
+      "n_fetched": 8,
+      "fetched_skills": [
+        "Python",
+        "Machine Learning",
+        "TensorFlow",
+        "PyTorch",
+        "SQL",
+        "Docker",
+        "Git",
+        "Statistics"
+      ]
+    },
+    "tool3_gap": {
+      "missing_precision": 1.0,
+      "missing_recall": 0.25,
+      "missing_f1": 0.4,
+      "matched_precision": 0.714,
+      "matched_recall": 0.714,
+      "matched_f1": 0.714,
+      "overlap_score": 0.88,
+      "latency_s": 0.71,
+      "predicted_missing": [
+        "Statistics"
+      ],
+      "predicted_matched": [
+        "Python",
+        "Machine Learning",
+        "TensorFlow",
+        "PyTorch",
+        "SQL",
+        "Docker",
+        "Git"
+      ]
+    },
+    "tool4_rewrite": {
+      "keyword_match_rate": 0.7,
+      "word_count": 271,
+      "latency_s": 0.36,
+      "has_placeholder": false,
+      "rewritten_preview": "SHARMIL KALLICHANDA ===================  TARGET ROLE: ML Engineer  PROFESSIONAL SUMMARY -------------------- SHARMIL KALLICHANDA is a highly skilled \"ML Engineer\" with extensive experience in Python, Machine Learning, TenSoroFlow, PyTorch, SQL, Docker, Git, and plausible skills in PyToRCCH. They pos"
+    }
+  },
+  {
+    "id": "test_03",
+    "name": "Somaiah Poonacha \u2014 Supply Chain / Data Analyst",
+    "role": "Data Analyst",
+    "tool1_parse": {
+      "precision": 0.571,
+      "recall": 0.333,
+      "f1": 0.421,
+      "tp": 4,
+      "fp": 3,
+      "fn": 8,
+      "latency_s": 0.66,
+      "n_predicted": 7,
+      "n_ground_truth": 19,
+      "name_extracted": "SOMAIAH POONACHA",
+      "predicted_skills": [
+        "Go",
+        "R",
+        "Sql",
+        "Rag",
+        "Data Analysis",
+        "Jira",
+        "Project Management"
+      ]
+    },
+    "tool2_fetch": {
+      "precision": 0.857,
+      "recall": 0.667,
+      "f1": 0.75,
+      "tp": 6,
+      "fp": 1,
+      "fn": 3,
+      "latency_s": 0.14,
+      "source": "static_map",
+      "n_fetched": 7,
+      "fetched_skills": [
+        "SQL",
+        "Python",
+        "Excel",
+        "Data Visualization",
+        "Statistics",
+        "Tableau",
+        "Communication"
+      ]
+    },
+    "tool3_gap": {
+      "missing_precision": 0.333,
+      "missing_recall": 0.5,
+      "missing_f1": 0.4,
+      "matched_precision": 1.0,
+      "matched_recall": 0.2,
+      "matched_f1": 0.333,
+      "overlap_score": 0.14,
+      "latency_s": 1.2,
+      "predicted_missing": [
+        "Python",
+        "Excel",
+        "Data Visualization",
+        "Statistics",
+        "Tableau",
+        "Communication"
+      ],
+      "predicted_matched": [
+        "SQL"
+      ]
+    },
+    "tool4_rewrite": {
+      "keyword_match_rate": 0.6,
+      "word_count": 204,
+      "latency_s": 0.27,
+      "has_placeholder": false,
+      "rewritten_preview": "SOMAIAH POONACHA ================  TARGET ROLE: Data Analyst  PROFESSIONAL SUMMARY -------------------- SOMAIAH POONACHA is a skilled Data Analyst with extensive experience in SQL, providing valuable insights to businesses. Their expertise in this field is essential for analyzing data, identifying t"
+    }
+  }
+]
